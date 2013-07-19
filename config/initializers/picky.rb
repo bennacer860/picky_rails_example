@@ -4,7 +4,7 @@ Picky.logger = Picky::Loggers::Silent.new
 
 # We create a new index and store it in the constant BooksIndex.
 #
-BooksIndex = Picky::Index.new :things do
+BooksIndex = Picky::Index.new :books do
   # Our keys are integers.
   # Use :to_s if you have strings.
   #
