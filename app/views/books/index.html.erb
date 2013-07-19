@@ -34,7 +34,19 @@
 $(window).load(function() {
   pickyClient = new PickyClient({
     full: '/books/search'  ,
-    live: '/books/search'
+    live: '/books/search' ,
+    fullResults: 50,         // Default is 20.
+    liveResults: 50,         // Default is 0.
+    liveRendered: true,      // Render live results as if they were full ones.
+    liveSearchInterval: 166, // Time between keystrokes before it sends the query.
+    searchOnEmpty: true,     // Search even when the query field is empty.
+
+    explanations: {
+      en:{
+        title:     'titled',
+        author:    'written by'
+      }
+    }  
   });
 });
 </script>

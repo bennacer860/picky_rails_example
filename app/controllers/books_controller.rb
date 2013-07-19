@@ -111,6 +111,7 @@ class BooksController < ApplicationController
       render_to_string :partial => "book", :object => book
     end
     
+    puts results.to_json
     # We respond with a nice JSON result.
     #
     respond_to do |format|
