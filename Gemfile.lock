@@ -126,8 +126,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   forgery (= 0.5.0)
   jquery-rails
-  picky (~> 4.9)
-  picky-client (~> 4.9)
+  picky (~> 4.16)
+  picky-client (~> 4.16)
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3
