@@ -1,3 +1,6 @@
+<%= raw(Picky::Helper.cached_interface) %>
+
+
 <h1>Listing books</h1>
 
 <table>
@@ -27,3 +30,10 @@
 <br />
 
 <%= link_to 'New Book', new_book_path %>
+<script>
+$(window).load(function() {
+  pickyClient = new PickyClient({
+    full: '/search'  
+  });
+});
+</script>
